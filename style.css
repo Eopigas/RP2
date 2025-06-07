@@ -66,13 +66,14 @@ body * {
 
 
 .transcender{
-    color: #750000;
+    color: #ff0000;
     text-decoration: none;
     margin-top: -5px;
 }
 
 .transcender:hover{
     text-decoration: underline;
+    color: white;
 }
 
 .card-login {
