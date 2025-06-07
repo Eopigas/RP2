@@ -1,0 +1,202 @@
+/* ====== Reset ====== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quintessential&display=swap');
+
+
+
+body {
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+/* ====== Container Principal ====== */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cinzel", serif;
+}
+
+/* ====== Coluna Esquerda ====== */
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+}
+
+.left-login > h1 {
+  font-size: 3vw;
+  color: azure;
+}
+
+.left-login-image {
+  width: 35vw;
+}
+
+/* ====== Coluna Direita / Card ====== */
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/images.jpeg);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(100px);
+  font-family: "Cinzel", serif;
+  
+}
+
+.forgot {
+    color: white;
+    margin-top: -10px;
+
+}
+
+
+.transcender{
+    color: #750000;
+    text-decoration: none;
+    margin-top: -5px;
+}
+
+.transcender:hover{
+    text-decoration: underline;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #a3a3a3;
+  backdrop-filter: blur(4px);
+  height: 95%;
+
+  
+}
+
+.card-login > h1 {
+  color: azure;
+  font-weight: 800;
+  margin: 0;
+  font-family: "Cinzel", serif;
+}
+
+/* ====== Formulário ====== */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os elementos, inclusive o botão */
+}
+
+/* ====== Campos de Texto ====== */
+.textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+  font-family: "Cinzel", serif;
+}
+
+.textfield > label {
+  color: azure;
+  margin-bottom: 10px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 15px;
+  background: transparent;
+  color: azure;
+  font-size: 14pt;
+  line-height: 1.4;
+  box-shadow: 0px 7px 13px #bdbdbd;
+  outline: none;
+  font-family: "Cinzel", serif;
+  box-sizing: border-box;
+}
+
+.textfield > input::placeholder {
+  color: azure;
+}
+
+/* ====== Botão Login ====== */
+.btnLogar {
+  width: 200px;
+  padding: 16px 0px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: azure;
+  background: #747474;
+  cursor: pointer;
+  
+  transition: 0.3s ease-in-out;
+}
+
+.btnLogar:hover {
+  background: #fdfdfd;
+  color: black;
+  box-shadow: 2px 2px 20px rgba(230, 229, 229, 0.712);
+  transition: 0.3s ease-in-out;
+}
+
+/* ====== Responsivo ====== */
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-login {
+    width: 80vw;
+  }
+
+  .left-login > h1{
+    font-size: x-large;
+  }
+
+  .right-login {
+    width: 100vw;
+  }
+  
+  .left-login-image{
+    width: 50vw;
+  }
+
+  .card-login{
+    width: 90%;
+
+  }
+
+
+}
